@@ -49,3 +49,15 @@ Como se puede observar, se está utilizando la imagen de Odoo 16.0, la cual se e
 
 ## 2. Integración de PostgreSQL con nuestro IDE:
 
+> [!NOTE]
+> Previo a la integración, es necesario que nuestro contenedor este levantado. Para ello empleamos nuestro comando:
+> *docker compose up -d*
+
+En el apartado superior derecho de nuestro IDE, encontraqmos la opción de "Database". En este encontramos el signo +, el cual nos permite añadir una nueva conexión.
+
+![img_1.png](media%2Fimg_1.png)
+
+Una vez dentro, debemos rellenar los campos con los datos de nuestro contenedor de PostgreSQL.
+
+
+
