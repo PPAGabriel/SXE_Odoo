@@ -59,5 +59,48 @@ En el apartado superior derecho de nuestro IDE, encontraqmos la opción de "Data
 
 Una vez dentro, debemos rellenar los campos con los datos de nuestro contenedor de PostgreSQL.
 
+## 3. Configurando Odoo:
+
+En el apartado de configuración de Odoo, debemos añadir una nueva base de datos. Para ello, debemos dirigirnos al puerto donde se encuentra nuestra aplicación, en este caso, el puerto 8069.
+
+![img.png](media%2Fimg.png)
+
+Una vez dentro, rellenamos los campos, además de seleccionar la opción "Demo data".
+
+![img_2.png](media%2Fimg_2.png)
+
+En este mismo orden de ideas, accedemos con el usuario y contraseña que decidimos colocar, y nos encontraremos con la siguiente pantalla:
+
+![img_3.png](media%2Fimg_3.png)
+
+Ahora bien, para este caso, el nombre de la base de datos que creamos fue llamada "SXE_MyDB".
+
+En el apartado anterior, se mencionó que se debía integrar PostgreSQL con nuestro IDE. Esto conlleva a que se pueda acceder a la base de datos desde el IDE, y así poder realizar consultas, entre otras cosas.
+
+![img_4.png](media%2Fimg_4.png)
+
+## 4. El puerto 5432 está ocupado: Solución
+
+En caso de que el puerto 5432 se encuentre ocupado, se debe realizar lo siguiente:
+
+- Abrir la terminal y escribir el siguiente comando:
+
+```bash
+sudo netstat -putan | grep :5432
+```
+
+- Una vez realizado esto, se debe obtener el PID del proceso que está ocupando el puerto 5432.
+- Luego, se debe escribir el siguiente comando:
+
+```bash 
+sudo pkill #Nombre del proceso
+```
+![img_5.png](media%2Fimg_5.png)
+
+---
+Con esto, nuestro gestor de base de datos se encontrará funcionando correctamente.
+
+# ¡Gracias por leer, espero tu 10! :smile:
+
 
 
