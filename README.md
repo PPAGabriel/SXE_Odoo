@@ -81,6 +81,8 @@ En el apartado anterior, se mencionó que se debía integrar PostgreSQL con nues
 
 ## 4. El puerto 5432 está ocupado: Solución
 
+Es posible que el puerto que elegimos se encuente ocupado, ocasionando que nuestro contenedor genere un conflicto y falle su ejecución.
+
 En caso de que el puerto 5432 se encuentre ocupado, se debe realizar lo siguiente:
 
 - Abrir la terminal y escribir el siguiente comando:
