@@ -46,3 +46,6 @@ services:
 ```
 
 Como se puede observar, se está utilizando la imagen de Odoo 16.0, la cual se encuentra en Docker Hub. Además, se está utilizando una base de datos de Postgres, la cual se encuentra en el mismo Docker Compose.
+
+## 2. Integración de PostgreSQL con nuestro IDE:
+
